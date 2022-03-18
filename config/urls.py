@@ -26,6 +26,4 @@ urlpatterns = [
     
     # Shortener Urls
     path('', include('urlshortener.urls')),
-    path('accounts/',include('accounts.urls')),
-    url(r'^Amedia/(?p<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
 ]
